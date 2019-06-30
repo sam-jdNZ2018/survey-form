@@ -1,0 +1,219 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #3951c6;
+  min-width: 250px;
+}
+
+main {
+  margin: 10px;
+}
+
+#title {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  font-family: Roboto, serif;
+}
+
+#form-container {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  max-width: 900px;
+  width: 75%;
+  padding: 5px 10px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+
+#description {
+  width: 90%;
+  padding: 0px 0px 5px 0px;
+  text-align: center;
+  font-family: Roboto, serif;
+  display: inline-block;
+}
+
+#field-warning {
+  color: red;
+  font-size: 14px;
+  font-family: Roboto, serif;
+}
+#survey-form {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*class used to ensure that both the label side and the input side both take 50% each of the available space*/
+.form-item-div {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 10px;
+}
+
+/*Each one contains a label describing the field on that row*/
+.label-div {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#alcohol-label,
+#food-label,
+#comment-label {
+  width: 95%;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Roboto, serif;
+  text-align: right;
+}
+
+#name-label,
+#email-label {
+  padding-top: 2px;
+}
+
+#number-label,
+#dropdown-label {
+  padding-top: 8px;
+}
+
+/*Formats the asterisk symbol identifying that a field is required*/
+.required-symbol {
+  vertical-align: super;
+  color: red;
+  font-size: 18px;
+  font-family: Roboto, serif;
+}
+
+/*Holds an input element in a row of the form*/
+.content-div {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  width: 80%;
+  height: 40px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Roboto, serif;
+}
+
+#dropdown {
+  width: 150px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Roboto, serif;
+}
+
+/*Holds the choices on alcohol consumption*/
+#alcohol-radio-div {
+  text-align: left;
+}
+
+/*Holds the choices on cusine preferences*/
+#food-check-div {
+  width: 100%;
+}
+
+#food-check-label {
+  display: block;
+  height: 50px;
+}
+
+#food-check-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 33px;
+}
+
+.food-list-item {
+  text-align: left;
+}
+
+#textarea {
+  height: 100px;
+  width: 70%;
+  resize: none;
+}
+
+#submit {
+  width: 80px;
+  height: 40px;
+  margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 1215px) {
+  #form-container {
+    max-width: 900px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-item-div {
+    padding-left: 20px;
+    display: block;
+  }
+  .label-div {
+    text-align: left;
+  }
+  #name-label,
+  #email-label,
+  #number-label,
+  #dropdown-label,
+  #alcohol-label,
+  #food-label,
+  #comment-label {
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  #name,
+  #email,
+  #number,
+  #dropdown {
+    text-align: left;
+  }
+  #name,
+  #email,
+  #number {
+    width: 85%;
+  }
+  #food-check-div,
+  #alcohol-radio-div {
+    text-align: left;
+  }
+  .foot-list-item {
+    text-align: center;
+  }
+  .textarea {
+    width: 100%;
+    text-align: left;
+  }
+}

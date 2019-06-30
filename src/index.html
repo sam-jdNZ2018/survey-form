@@ -1,0 +1,67 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!--
+-->
+<main>
+  <h1 id="title"><strong>Restaurant Survey Form</strong></h1>
+
+  <div id="form-container">
+    <p id="description">Let us know you restaurant habits so we can send you great offers</p>
+    <p id="field-warning">Fields marked * are required</p>
+    <hr>
+    <form id="survey-form">
+      <div class="form-item-div">
+        <div class="label-div"><label id="name-label"> Name<span class="required-symbol">*</span></label></div>
+        <div class="content-div"><input id="name" type="text" placeholder="Enter your name..." required></div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="email-label"> Email<span class="required-symbol">*</span></label></label>
+        </div>
+        <div class="content-div"><input id="email" type="email" placeholder="Enter your email..." required></div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="number-label"> Age </label></div>
+        <div class="content-div"><input id="number" type="number" min="1" max="110" placeholder="Age"></div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="dropdown-label"> How frequently do you eat out?</label></div>
+        <div class="content-div">
+          <select id="dropdown">
+        <option value="" disabled selected>Select an option...</option>
+        <option value="Very frequently">Very Frequently</option>
+        <option value="Frequently">Frequently</option>
+        <option value="Occasionaly">Occasionaly</option>
+        <option value="Rarely">Rarely</option>
+        <option value="Never">Never</option>
+        </select></div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="alcohol-label"> Do you drink alcohol? </label></div>
+        <div id="alcohol-radio-div">
+          <label class="radio-label" for="Yes"><input class="alcohol" type="radio" name="alcohol-radio" value="Yes" checked>Yes</label>
+          <label class="radio-label" for="No"><input class="alcohol" type="radio" name="alcohol-radio" value="No" >No</label>
+        </div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="food-label"> What are your favourite cuisines?</label></div>
+        <div id="food-check-div">
+          <ul id="food-check-list">
+            <li class="food-list-item"><label class="food-check-label" for="Yes"><input class="food-check" type="checkbox" name="check" value="Italian">Italian</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="French">French</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Greek" >Greek</label></li>
+            <li class="food-list-item"> <label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Chinese" >Chinese</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Japanese" >Japanese</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Indian" >Indian</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Mexican" >Mexican</label></li>
+            <li class="food-list-item"><label class="food-check-label" for="No"><input class="food-check" type="checkbox" name="food-check" value="Creole" >Creole</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item-div">
+        <div class="label-div"><label id="comment-label"> Do you have any additional comments?</label></div>
+        <div class="content-div"><textarea id="textarea"></textarea></div>
+      </div>
+      <button id="submit" type="submit"> Submit</button>
+    </form>
+  </div>
+</main>
